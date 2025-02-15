@@ -60,7 +60,9 @@ const Auth = ({ isSingle, setIsSingle }) => {
                   onCheckedChange={(checked) => setIsSingle(checked)}
                   id="airplane-mode"
                 />
-                <Label htmlFor="airplane-mode">Single</Label>
+                <Label htmlFor="airplane-mode">
+                  {isSingle ? "single" : "commited"}
+                </Label>
               </div>
               {isSingle ? (
                 <div>
