@@ -58,7 +58,7 @@ export function TaskCard({ task, index, onDelete, onEdit }: TaskCardProps) {
                 </div>
               ) : (
                 <div className="flex items-center justify-between gap-2">
-                  <span className="flex-1">{task.title}</span>
+                  <span className="flex-1 font-semibold">{task.title}</span>
                   <div className="flex items-center gap-1">
                     <Button
                       size="icon"
